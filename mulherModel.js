@@ -1,5 +1,5 @@
 
-const mongoose= require('mongoose')
+const mongoose = require('mongoose')
 
 const MulherSchema = new mongoose.Schema({
     nome: {
@@ -17,8 +17,8 @@ const MulherSchema = new mongoose.Schema({
     minibio: {
         type: String,
         required: true,
-    } 
- })
- 
+    }
+})
+
 //a letra S é incluido no mongo
 module.exports = mongoose.model('diva', MulherSchema)
